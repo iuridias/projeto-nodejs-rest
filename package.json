@@ -1,0 +1,29 @@
+{
+  "name": "projet-nodejs-rest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iuridias/projeto-nodejs-rest.git"
+  },
+  "author": "Iuri Dias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iuridias/projeto-nodejs-rest/issues"
+  },
+  "homepage": "https://github.com/iuridias/projeto-nodejs-rest#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "consign": "^0.1.6",
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
