@@ -1,6 +1,9 @@
 const Atendimento = require('../models/atendimentos')
+const cors = require('cors');
 
 module.exports = app => {
+  app.use(cors({origin: '*'}))
+
   app.get('/atendimentos', (_, res) => {
     Atendimento.lista(res);
   });
