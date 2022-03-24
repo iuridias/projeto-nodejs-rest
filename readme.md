@@ -8,6 +8,7 @@ Para estudar mais ainda, quero no futuro criar uma interface html para realizar 
 
 Agradeço demais a professora Juliana pela didática e conteúdo.
 
-Conteúdo com projeto final do seguinte curso da Alura:
+Conteúdo com projeto final dos seguintes cursos da Alura:
 
 - Rest com NodeJS: API com Express e MySQL
+- NodeJS: Streaming de dados e Repositório

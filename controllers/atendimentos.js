@@ -5,7 +5,9 @@ module.exports = app => {
   app.use(cors({origin: '*'}))
 
   app.get('/atendimentos', (_, res) => {
-    Atendimento.lista(res);
+    Atendimento.lista()
+      .then(resultados => res.json(resultados))
+      .catch(erros => res.status(400).json(erros));
   });
 
   app.get('/atendimentos/:id', (req, res) => {
@@ -17,7 +19,10 @@ module.exports = app => {
   app.post('/atendimentos', (req, res) => {
     const atendimento = req.body;
 
-    Atendimento.adiciona(atendimento, res);
+    Atendimento.adiciona(atendimento)
+      .then(atendimentoCadastrado => res.status(201).json(atendimentoCadastrado))
+      .catch(erros => res.status(400).json(erros));
+
   });
 
   app.patch('/atendimentos/:id', (req, res) => {
